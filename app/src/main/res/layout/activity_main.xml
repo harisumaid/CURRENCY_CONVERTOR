@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/dollar"
+        android:layout_width="342dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="ENTER AMOUNT IN DOLLARS"
+        android:inputType="numberDecimal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="178dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/dollar"
+        android:layout_centerHorizontal="true"
+        android:onClick="calc"
+        android:text="CONVERT" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="182dp"
+        android:layout_below="@+id/button14"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/dimage" />
+
+</RelativeLayout>
